@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-17T01:52:15 GMT+02:00" name="Surefire suite" finished-at="2025-12-17T01:52:24 GMT+02:00" duration-ms="8676">
+  <suite started-at="2025-12-17T01:56:05 GMT+02:00" name="Surefire suite" finished-at="2025-12-17T01:56:13 GMT+02:00" duration-ms="8072">
     <groups>
     </groups>
-    <test started-at="2025-12-17T01:52:15 GMT+02:00" name="Surefire test" finished-at="2025-12-17T01:52:24 GMT+02:00" duration-ms="8676">
+    <test started-at="2025-12-17T01:56:05 GMT+02:00" name="Surefire test" finished-at="2025-12-17T01:56:13 GMT+02:00" duration-ms="8072">
       <class name="eyouth.Login.LoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:52:15 GMT+02:00" name="setUp" finished-at="2025-12-17T01:52:17 GMT+02:00" duration-ms="2343" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:56:05 GMT+02:00" name="setUp" finished-at="2025-12-17T01:56:07 GMT+02:00" duration-ms="1851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goHome()[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:52:17 GMT+02:00" name="goHome" finished-at="2025-12-17T01:52:21 GMT+02:00" duration-ms="3275" status="PASS">
+        <test-method is-config="true" signature="goHome()[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:56:07 GMT+02:00" name="goHome" finished-at="2025-12-17T01:56:10 GMT+02:00" duration-ms="2632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method signature="noDataLogin(eyouth.Utils.LoginData)[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:52:21 GMT+02:00" name="noDataLogin" data-provider="missingLoginData" finished-at="2025-12-17T01:52:23 GMT+02:00" duration-ms="2446" status="PASS">
+        <test-method signature="noDataLogin(eyouth.Utils.LoginData)[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:56:10 GMT+02:00" name="noDataLogin" data-provider="missingLoginData" finished-at="2025-12-17T01:56:13 GMT+02:00" duration-ms="2948" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[eyouth.Utils.LoginData@5b408dc3]]>
+                <![CDATA[eyouth.Utils.LoginData@65a4798f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noDataLogin -->
-        <test-method is-config="true" signature="cleanTabs()[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:52:23 GMT+02:00" name="cleanTabs" finished-at="2025-12-17T01:52:23 GMT+02:00" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="cleanTabs()[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:56:13 GMT+02:00" name="cleanTabs" finished-at="2025-12-17T01:56:13 GMT+02:00" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanTabs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:52:23 GMT+02:00" name="tearDown" finished-at="2025-12-17T01:52:24 GMT+02:00" duration-ms="359" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:eyouth.Login.LoginTests@5e4c8041]" started-at="2025-12-17T01:56:13 GMT+02:00" name="tearDown" finished-at="2025-12-17T01:56:13 GMT+02:00" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

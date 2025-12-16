@@ -12,13 +12,11 @@ public class SearchTests extends BaseTests {
     @Test
     public void searchWithValidKeyword() {
 
-        String keyword = "كيف تنضم إلى البنك";
-
-        HomePage homePage = new HomePage(driver);
-        EYouthPage eYouthPage = homePage.searchFor(keyword);
+        String searchData = "كيف تنضم إلى البنك";
+          EYouthPage eYouthPage = homePage.searchAndSelectFromDropdown(searchData);
 
         assertTrue(
-            eYouthPage.getPageTitle().contains(keyword),
+            eYouthPage.getPageTitle().contains(searchData),
             "Page title does not contain expected text"
         );
     }

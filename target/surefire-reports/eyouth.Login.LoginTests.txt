@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: eyouth.HomePage.SearchTests
+Test set: eyouth.Login.LoginTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.216 s - in eyouth.HomePage.SearchTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.815 s - in eyouth.Login.LoginTests

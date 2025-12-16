@@ -1,0 +1,17 @@
+[
+  {
+    "username": "Buttercup",
+    "password": "151515",
+    "expectedMessage": "NO_ERROR"
+  },
+  {
+    "username": "didi",
+    "password": "152436",
+    "expectedMessage": "اسم المستخدم أو كلمة المرور غير صحيحة"
+  },
+  {
+    "username": "",
+    "password": "",
+    "expectedMessage": " اسم المستخدم مطلوب"
+  }
+]

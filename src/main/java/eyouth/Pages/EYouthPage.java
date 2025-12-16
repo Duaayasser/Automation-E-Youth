@@ -11,7 +11,7 @@ public class EYouthPage {
 
     private WebDriver driver;
     private WebDriverWait wait;
-    private By pageTitle = By.tagName("h1");
+    private By pageTitle = By.xpath("//div[@class='courseDetails_titleContainer__kJIO4']//h1[@class='courseDetails_courseTitle__tmIRd'][contains(text(),'كيف تنضم إلى البنك')]");
 
     public EYouthPage(WebDriver driver) {
         this.driver = driver;
@@ -19,7 +19,7 @@ public class EYouthPage {
     }
 
     public String getPageTitle() {
-        return wait.until(ExpectedConditions.presenceOfElementLocated(pageTitle))
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(pageTitle))
                    .getText();
     }
 }

@@ -5,11 +5,11 @@
     <classes>
       <class name="eyouth.Login.LoginTests">
         <methods>
+          <include name="noDataLogin" invocation-numbers="0"/>
           <include name="cleanTabs"/>
           <include name="goHome"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="invalidUsernameLogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- eyouth.Login.LoginTests -->
     </classes>

@@ -33,4 +33,10 @@ public class LoginPage {
     public String getExpectedMessage(){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).getText();
     }
+    public String getEmptyUsernameMessage(){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(emptyUsername)).getText();
+    }
+    public String getEmptyPasswordMessage(){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(emptyPassword)).getText();
+    }
 }

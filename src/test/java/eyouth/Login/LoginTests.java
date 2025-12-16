@@ -18,5 +18,15 @@ public class LoginTests extends BaseTests{
         String message = "اسم المستخدم أو كلمة المرور غير صحيحة";
         assertTrue(loginPage.getExpectedMessage().contains(message));
     }
+    @Test(dataProvider = "missingLoginData" , dataProviderClass = JsonDataProvider.class)
+    public void noDataLogin(LoginData data){
+        LoginPage loginPage = homePage.clickLoginFromHome();
+        loginPage.setUsername(data.username);
+        loginPage.setPassword(data.password);
+        loginPage.clickLogin();
+        String message = "اسم المستخدم مطلوب";
+        assertTrue(loginPage.getEmptyUsernameMessage().contains(message));
+        assertTrue(loginPage.getEmptyPasswordMessage().contains(message));
+    }
     
 }

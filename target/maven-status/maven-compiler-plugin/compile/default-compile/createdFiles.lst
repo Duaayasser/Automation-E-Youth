@@ -1,0 +1,12 @@
+eyouth\Pages\EYouthPage.class
+eyouth\Utils\WindowManager.class
+eyouth\Pages\PaymentPage.class
+eyouth\Pages\HomePage.class
+eyouth\Pages\SignupPage.class
+eyouth\Pages\FacebookPage.class
+eyouth\Pages\AllCoursesPage.class
+eyouth\Pages\CourseDetailsPage.class
+eyouth\Pages\LinkedinPage.class
+eyouth\Utils\LoginData.class
+eyouth\Pages\InstgramPage.class
+eyouth\Pages\LoginPage.class

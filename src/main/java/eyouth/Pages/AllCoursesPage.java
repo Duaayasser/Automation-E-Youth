@@ -14,6 +14,8 @@ public class AllCoursesPage {
     private By anyCourse = By.xpath("//div[@title='course-v1:Banking+RBPGZUO2024+RBZXCTD2024']");
     private By subscribeButton = By.xpath("(//button[contains(@aria-label,'button to be clicked')][contains(text(),'اشترك')])[4]");
     private By selectedCourseTitle = By.xpath("//p[contains(text(),'الخدمات المصرفية للأفراد')]");
+    private By courseImage = By.xpath("//div[@title='course-v1:Banking+RBPGZUO2024+RBZXCTD2024']");
+    private By courseInstructor = By.xpath("//strong[normalize-space()='Ahmed Mounir']");
     public AllCoursesPage(WebDriver driver){
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -32,5 +34,17 @@ public class AllCoursesPage {
     }
     public String getSelectedCourseTitle(){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(selectedCourseTitle)).getText();
+    }
+    public boolean crsImageIsDisplayed(){
+        return driver.findElement(courseImage).isDisplayed();
+    }
+    public boolean crsTitleIsDisplayed(){
+        return driver.findElement(selectedCourseTitle).isDisplayed();
+    }
+    public boolean crsInstructorIsDisplayed(){
+        return driver.findElement(courseInstructor).isDisplayed();
+    }
+    public boolean crsSubscribeBtnIsDisplayed(){
+        return driver.findElement(subscribeButton).isDisplayed();
     }
 }

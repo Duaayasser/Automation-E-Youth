@@ -1,0 +1,9 @@
+eyouth\Login\JsonDataProvider$1.class
+eyouth\Base\BaseTests.class
+eyouth\CourseDetails\CourseDetailsTests.class
+eyouth\Login\JsonDataProvider.class
+eyouth\SignUp\SignupTests.class
+eyouth\SocialMedia\SocialMediaTests.class
+eyouth\Login\LoginTests.class
+eyouth\CourseCard\CardTests.class
+eyouth\HomePage\SearchTests.class

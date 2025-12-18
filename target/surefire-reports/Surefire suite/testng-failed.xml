@@ -3,15 +3,54 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="eyouth.SignUp.SignupTests">
+        <methods>
+          <include name="cleanTabs"/>
+          <include name="joinUSTest"/>
+          <include name="goHome"/>
+          <include name="signupTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- eyouth.SignUp.SignupTests -->
       <class name="eyouth.SocialMedia.SocialMediaTests">
         <methods>
           <include name="cleanTabs"/>
           <include name="goHome"/>
-          <include name="tearDown"/>
           <include name="socialTest"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- eyouth.SocialMedia.SocialMediaTests -->
+      <class name="eyouth.HomePage.SearchTests">
+        <methods>
+          <include name="cleanTabs"/>
+          <include name="goHome"/>
+          <include name="tearDown"/>
+          <include name="searchWithValidKeyword"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- eyouth.HomePage.SearchTests -->
+      <class name="eyouth.CourseCard.CardTests">
+        <methods>
+          <include name="cleanTabs"/>
+          <include name="cardUITest"/>
+          <include name="goHome"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- eyouth.CourseCard.CardTests -->
+      <class name="eyouth.Login.LoginTests">
+        <methods>
+          <include name="noDataLogin"/>
+          <include name="cleanTabs"/>
+          <include name="goHome"/>
+          <include name="validLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="invalidUsernameLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- eyouth.Login.LoginTests -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

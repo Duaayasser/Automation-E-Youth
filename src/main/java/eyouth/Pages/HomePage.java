@@ -29,8 +29,9 @@ public class HomePage {
     private By loginButton = By.xpath("//button[contains(@class,'navbar_btn_signin__aLCnP')]");
     private By showAllButton = By.xpath("(//button[@class='btn btn-primary TopRanking_btn_see_all__-QYhB'])[1]");
     private By logo = By.xpath("//img[@alt='iao-logo']");
-    private By facebookIcon = By.xpath("//*[name()='path' and contains(@d,'M22 12c0-5')]");
-    private By linkedinIcon = By.xpath("//*[name()='path' and contains(@d,'M19 3a2 2 ')]");
+    private By facebookIcon = By.xpath("//a[contains(@href,'https://www.facebook.com/EYouthLearning/')]");
+    private By linkedinIcon = By.xpath("//a[contains(@href,'https://www.linkedin.com/company/eyouth/mycompany/verification/')]");
+    private By instgramIcon = By.xpath("//a[contains(@href,'https://instagram.com/eyouthlearning?igshid=YmMyMTA2M2Y=')]");
     public HomePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -103,12 +104,35 @@ public void scrollToLogo(){
         .executeScript("arguments[0].scrollIntoView({block:'center'});", scrollLogo);
 }
     public FacebookPage clickFacebook(){
-         wait.until(ExpectedConditions.visibilityOfElementLocated(facebookIcon)).click();
-         return new FacebookPage(driver);
-    }
+    WebElement fb = wait.until(
+        ExpectedConditions.presenceOfElementLocated(facebookIcon)
+    );
+
+    ((JavascriptExecutor) driver)
+        .executeScript("arguments[0].click();", fb);
+
+    return new FacebookPage(driver);
+}
+
     public LinkedinPage clickLinkedin(){
-         wait.until(ExpectedConditions.visibilityOfElementLocated(linkedinIcon)).click();
-         return new LinkedinPage(driver);
+         WebElement li = wait.until(
+        ExpectedConditions.presenceOfElementLocated(linkedinIcon)
+    );
+
+    ((JavascriptExecutor) driver)
+        .executeScript("arguments[0].click();", li);
+
+    return new LinkedinPage(driver);
+    }
+     public InstgramPage clickInstgram(){
+         WebElement insta = wait.until(
+        ExpectedConditions.presenceOfElementLocated(instgramIcon)
+    );
+
+    ((JavascriptExecutor) driver)
+        .executeScript("arguments[0].click();", insta);
+
+    return new InstgramPage(driver);
     }
 
 }

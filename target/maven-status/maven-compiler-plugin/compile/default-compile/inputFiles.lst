@@ -1,4 +1,5 @@
 D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\CourseDetailsPage.java
+D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Utils\WindowManager.java
 D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Utils\LoginData.java
 D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\FacebookPage.java
 D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\HomePage.java
@@ -6,5 +7,6 @@ D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\AllCoursesPage.jav
 D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\PaymentPage.java
 D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\SignupPage.java
 D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\EYouthPage.java
+D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\InstgramPage.java
 D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\LinkedinPage.java
 D:\GitHub Repos\Automation-E-Youth\src\main\java\eyouth\Pages\LoginPage.java

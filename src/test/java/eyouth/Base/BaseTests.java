@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import eyouth.Pages.HomePage;
+import eyouth.Utils.WindowManager;
 
 
 public class BaseTests {
@@ -51,6 +52,9 @@ public void cleanTabs() {
         if (driver != null) {
             driver.quit();
         }
+    }
+    public WindowManager getWindowManager() {
+        return new WindowManager(driver);
     }
     
 }

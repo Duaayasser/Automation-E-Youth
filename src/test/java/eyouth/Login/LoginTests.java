@@ -1,11 +1,13 @@
 package eyouth.Login;
 
 import static org.testng.Assert.assertTrue;
-
 import org.testng.annotations.Test;
 
 import eyouth.Base.BaseTests;
+import eyouth.Pages.AllCoursesPage;
+import eyouth.Pages.HomePage;
 import eyouth.Pages.LoginPage;
+import eyouth.Pages.PaymentPage;
 import eyouth.Utils.LoginData;
 
 public class LoginTests extends BaseTests{
@@ -27,6 +29,20 @@ public class LoginTests extends BaseTests{
         String message = "اسم المستخدم مطلوب";
         assertTrue(loginPage.getEmptyUsernameMessage().contains(message));
         assertTrue(loginPage.getEmptyPasswordMessage().contains(message));
+    }
+    @Test(dataProvider = "validData" , dataProviderClass = JsonDataProvider.class)
+    public void validLogin(LoginData data){
+        LoginPage loginPage = homePage.clickLoginFromHome();
+        loginPage.setUsername(data.username);
+        loginPage.setPassword(data.password);
+        HomePage homeAfterLogin = loginPage.clickLogin();
+        homeAfterLogin.scrollToShowAllButton();
+        AllCoursesPage allCoursesPage = homeAfterLogin.clickShowAllButton();
+        String courseTitle = allCoursesPage.getSelectedCourseTitle();
+        PaymentPage paymentPage = allCoursesPage.clickSubscribe();
+        paymentPage.clickCardButton();
+        assertTrue(paymentPage.getCourseTitle().contains(courseTitle));
+
     }
     
 }

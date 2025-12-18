@@ -26,8 +26,9 @@ public class LoginPage {
     public void setPassword(String password){
         wait.until(ExpectedConditions.visibilityOfElementLocated(passwordField)).sendKeys(password);
     }
-    public void clickLogin(){
+    public HomePage clickLogin(){
     wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
+    return new HomePage(driver);
 }
 
     public String getExpectedMessage(){
@@ -39,4 +40,6 @@ public class LoginPage {
     public String getEmptyPasswordMessage(){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(emptyPassword)).getText();
     }
+    
+
 }

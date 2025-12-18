@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: eyouth.SocialMedia.SocialMediaTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.178 s <<< FAILURE! - in eyouth.SocialMedia.SocialMediaTests
+socialTest(eyouth.SocialMedia.SocialMediaTests)  Time elapsed: 3.246 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (273, 2057)
+  (Session info: chrome=143.0.7499.41)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ab15bd1e93c03bac63762cdec65fed14, clickElement {id=f.9EF75E7ADDF76BEBE75133CD4526D22A.d.1B4E0A803E7593B9E324915080E08295.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.146 (c1224fc40c9..., userDataDir: C:\Users\Qebaa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50221}, goog:processID: 23544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50221/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ab15bd1e93c03bac63762cdec65fed14)] -> xpath: //*[name()='path' and contains(@d,'M22 12c0-5')]]
+Session ID: ab15bd1e93c03bac63762cdec65fed14
+	at eyouth.SocialMedia.SocialMediaTests.socialTest(SocialMediaTests.java:13)
+

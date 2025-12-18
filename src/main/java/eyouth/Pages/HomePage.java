@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -26,7 +27,10 @@ public class HomePage {
     private By joinUSButton = By.cssSelector(".btn.btn-outline-primary.mx-1.navbar_btn_signup__z4Cok");
     private By joinAsStudent = By.cssSelector("a:nth-child(1) div:nth-child(1)");
     private By loginButton = By.xpath("//button[contains(@class,'navbar_btn_signin__aLCnP')]");
-
+    private By showAllButton = By.xpath("(//button[@class='btn btn-primary TopRanking_btn_see_all__-QYhB'])[1]");
+    private By logo = By.xpath("//img[@alt='iao-logo']");
+    private By facebookIcon = By.xpath("//*[name()='path' and contains(@d,'M22 12c0-5')]");
+    private By linkedinIcon = By.xpath("//*[name()='path' and contains(@d,'M19 3a2 2 ')]");
     public HomePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -73,4 +77,38 @@ public class HomePage {
         wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
         return new LoginPage(driver);
     }
+    public void scrollToShowAllButton(){
+    WebElement button = wait.until(
+        ExpectedConditions.presenceOfElementLocated(showAllButton)
+    );
+    ((JavascriptExecutor) driver)
+        .executeScript("arguments[0].scrollIntoView({block:'center'});", button);
+}
+
+  public AllCoursesPage clickShowAllButton(){
+    WebElement button = wait.until(
+        ExpectedConditions.visibilityOfElementLocated(showAllButton)
+    );
+
+    ((JavascriptExecutor) driver)
+        .executeScript("arguments[0].click();", button);
+
+    return new AllCoursesPage(driver);
+}
+public void scrollToLogo(){
+    WebElement scrollLogo = wait.until(
+        ExpectedConditions.presenceOfElementLocated(logo)
+    );
+    ((JavascriptExecutor) driver)
+        .executeScript("arguments[0].scrollIntoView({block:'center'});", scrollLogo);
+}
+    public FacebookPage clickFacebook(){
+         wait.until(ExpectedConditions.visibilityOfElementLocated(facebookIcon)).click();
+         return new FacebookPage(driver);
+    }
+    public LinkedinPage clickLinkedin(){
+         wait.until(ExpectedConditions.visibilityOfElementLocated(linkedinIcon)).click();
+         return new LinkedinPage(driver);
+    }
+
 }

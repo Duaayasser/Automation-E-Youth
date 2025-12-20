@@ -35,16 +35,28 @@ public class AllCoursesPage {
     public String getSelectedCourseTitle(){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(selectedCourseTitle)).getText();
     }
-    public boolean crsImageIsDisplayed(){
-        return driver.findElement(courseImage).isDisplayed();
-    }
-    public boolean crsTitleIsDisplayed(){
-        return driver.findElement(selectedCourseTitle).isDisplayed();
-    }
-    public boolean crsInstructorIsDisplayed(){
-        return driver.findElement(courseInstructor).isDisplayed();
-    }
-    public boolean crsSubscribeBtnIsDisplayed(){
-        return driver.findElement(subscribeButton).isDisplayed();
-    }
+   public boolean crsImageIsDisplayed() {
+    return wait
+            .until(ExpectedConditions.visibilityOfElementLocated(courseImage))
+            .isDisplayed();
+}
+
+public boolean crsTitleIsDisplayed() {
+    return wait
+            .until(ExpectedConditions.visibilityOfElementLocated(selectedCourseTitle))
+            .isDisplayed();
+}
+
+public boolean crsInstructorIsDisplayed() {
+    return wait
+            .until(ExpectedConditions.visibilityOfElementLocated(courseInstructor))
+            .isDisplayed();
+}
+
+public boolean crsSubscribeBtnIsDisplayed() {
+    return wait
+            .until(ExpectedConditions.visibilityOfElementLocated(subscribeButton))
+            .isDisplayed();
+}
+
 }

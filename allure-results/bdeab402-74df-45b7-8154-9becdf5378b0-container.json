@@ -1,0 +1,1 @@
+{"uuid":"bdeab402-74df-45b7-8154-9becdf5378b0","name":"eyouth.Base.BaseTests.goHome","children":["ddff6747-034a-45d2-a9b8-b25e6f69ac0c"],"description":"","befores":[{"name":"goHome","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1766176976739,"stop":1766176979936}],"afters":[],"start":1766176976739,"stop":1766176979936}

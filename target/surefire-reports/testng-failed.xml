@@ -3,17 +3,15 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="eyouth.Login.LoginTests">
+      <class name="eyouth.SignUp.SignupTests">
         <methods>
-          <include name="noDataLogin"/>
           <include name="cleanTabs"/>
+          <include name="joinUSTest"/>
           <include name="goHome"/>
-          <include name="validLogin"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="invalidUsernameLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- eyouth.Login.LoginTests -->
+      </class> <!-- eyouth.SignUp.SignupTests -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
